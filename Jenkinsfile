@@ -9,4 +9,8 @@ node {
         sh 'mvn package'    
     }
  
+stage ('archival') 
+	//archiving artifact
+	sh 'target/*.jar'
+	}
 }
